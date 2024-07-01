@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color:#c11325;
+  color: white;
+  padding: 10px 20px;
+}
+
+body {
+  transition: background-color 0.5s ease;
+}
+
+/* Add a subtle background color change on hover for the Submit button */
+button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+/* Example of an animation for the form elements */
+input, button {
+  transition: transform 0.3s ease;
+}
+
+/* Apply a scaling effect on hover for input elements */
+input:hover, button:hover {
+  transform: scale(1.05);
+}
+
+/* Add a bounce animation for the Submit button */
+button:active {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}

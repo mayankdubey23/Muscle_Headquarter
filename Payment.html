@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Membership Payment</title>
+  <link rel="stylesheet" href="Css/Payment.css">
+</head>
+<body>
+
+  <form id="paymentForm" action="/process_payment" method="post">
+    <label for="cardNumber">Card Number:</label>
+    <input type="text" id="cardNumber" name="cardNumber" required>
+    
+    <label for="expiryDate">Expiry Date:</label>
+    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+
+    <label for="upiId">UPI ID:</label>
+    <input type="text" id="upiId" name="upiId" required>
+
+    <label for="paytmNumber">Paytm Number:</label>
+    <input type="text" id="paytmNumber" name="paytmNumber" required>
+
+    <button type="button" onclick="validatePayment()">Submit Payment</button>
+  </form>
+
+  <script>
+    function validatePayment() {
+      // Add client-side validation logic here
+
+      // If validation passes, submit the form
+      document.getElementById("paymentForm").submit();
+    }
+  </script>
+
+</body>
+</html>
